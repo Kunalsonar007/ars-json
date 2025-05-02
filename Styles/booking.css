@@ -1,0 +1,257 @@
+body {
+  font-family:
+    Open Sans,
+    sans-serif;
+  margin: 20px;
+  font-size: 14px;
+  background-image: url("https://images.unsplash.com/photo-1561317488-9cfabd412b66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: scroll;
+  background-attachment: fixed;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 80%;
+  color: #253738;
+  font-family: "Lufga", sans-serif;
+  margin-top: 2%;
+  padding: 10px;
+  border-radius: 10px;
+}
+header {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 30px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 30vh;
+  z-index: 1;
+  font-size: 16px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 500px;
+  /* opacity: 0.6; */
+}
+.nav-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ff0202;
+}
+
+main {
+  background-color: #5a000000;
+}
+
+section {
+  /* background-color: #fff; */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 20px;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .nav-right {
+    position: relative;
+    top: 0;
+    transform: none;
+    right: 0;
+  }
+  main {
+    margin-right: 0;
+  }
+  section {
+    margin-bottom: 10px;
+  }
+}
+
+#headingOfHistory {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: lufga, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.edit-form {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 35%;
+  background-color: white;
+  border-radius: 10px; /* add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5); /* add box shadow */
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s; /* add transition for smooth effects */
+}
+
+.edit-form:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2); /* increase box shadow on hover */
+  cursor: pointer; /* change cursor to pointer on hover */
+}
+
+.edit-form:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5); /* reduce box shadow on active */
+}
+.edit-form h2 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.edit-form form {
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.edit-form form label {
+  display: block;
+
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+.edit-form form input[type="text"],
+input[type="date"] {
+  width: -webkit-fill-available;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 7px;
+}
+#history {
+  text-align: left;
+}
+
+#history .button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#history .edit-button {
+  padding: 7px 20px;
+  background-color: rgb(49, 168, 49);
+  color: #fff;
+  margin: 10px;
+  border-radius: 7px;
+  border: none;
+}
+
+#history .edit-button:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#history .delete-button {
+  padding: 7px 20px;
+  background-color: #ac251b;
+  color: #fff;
+  margin: 10px;
+  border-radius: 7px;
+  border: none;
+}
+
+#history .delete-button:hover {
+  background-color: #e91e63;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
